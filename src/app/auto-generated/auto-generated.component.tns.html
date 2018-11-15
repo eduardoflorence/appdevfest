@@ -1,0 +1,23 @@
+<FlexboxLayout class="page">
+	<StackLayout class="form">
+		<Image class="logo" src="res://logo2"></Image>
+		<Label class="header" text="APPDEVFEST"></Label>
+
+		<GridLayout rows="auto, auto">
+			<StackLayout row="0" class="input-field">
+        <Label text="E-mail"></Label>
+				<TextField class="input" keyboardType="email" autocorrect="false" autocapitalizationType="none" [(ngModel)]="user.email" returnKeyType="next"></TextField>
+				<StackLayout class="hr-light"></StackLayout>
+			</StackLayout>
+
+			<StackLayout row="1" class="input-field">
+        <Label text="Senha"></Label>
+				<TextField class="input" secure="true" [(ngModel)]="user.password" returnKeyType="next"></TextField>
+				<StackLayout class="hr-light"></StackLayout>
+			</StackLayout>
+		</GridLayout>
+
+		<Button text="Acessar" (tap)="submit()" class="btn btn-primary m-t-20"></Button>
+	</StackLayout>
+
+</FlexboxLayout>

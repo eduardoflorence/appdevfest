@@ -140,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "appdevfest"
+  "defaultProject": "appdevfest",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }
